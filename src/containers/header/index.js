@@ -34,13 +34,7 @@ class Header extends Component {
               <Link to="/userinfo">Work</Link>
             </li>
             <li className="um-bf1">
-              <Link to="/userinfo">Work</Link>
-            </li>
-            <li className="um-bf1">
-              <Link to="/userinfo">Work</Link>
-            </li>
-            <li className="um-bf1">
-              <Link to="/userinfo">Work</Link>
+              <Link to="/userinfo">UserInfo</Link>
             </li>
           </ul>
         </div>

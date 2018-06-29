@@ -5,11 +5,14 @@ import { AppContainer } from 'react-hot-loader';
 // 引入路由
 import getRouter from 'router/router';
 
-// 引入css样式
-import './static/style/um.css';
+// 引入polyfill文件
+import './public/polyfill';
 
 // 引入store
 import './store';
+
+// 引入css样式
+import './static/style/um.css';
 
 /*初始化*/
 renderWithHotReload(getRouter());
