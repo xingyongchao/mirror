@@ -1,0 +1,15 @@
+.header{
+  background: #cb3837;
+  color: #ffffff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.header a{
+  color: #ffffff;
+}
+.header li {
+  margin-right: 15px;
+}
+.header li:last-child{
+  margin-right: 0;
+}
