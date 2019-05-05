@@ -61,7 +61,6 @@ commonConfig = {
       router: path.join(__dirname, 'src/router'),
       public: path.join(__dirname, 'src/public'),
       static: path.join(__dirname, 'src/static'),
-      'u8c': 'u8c-components/dist',
     }
   }
 };
