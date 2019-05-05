@@ -20,7 +20,15 @@ commonConfig = {
       test: /\.js$/,
       use: ['babel-loader?cacheDirectory=true'],
       include: path.join(__dirname, 'src')
-    }, {
+    }, 
+    {
+      test: /\.(woff2?|eot|ttf|otf|svg)(\?.*)?$/,
+      loader: 'url-loader',
+      options: {
+        limit: 10000,
+        name: 'fonts/[name].[md5:hash:hex:7].[ext]'
+      }
+    },{
       test: /\.(png|jpg|gif)$/,
       use: [{
         loader: 'url-loader',
@@ -53,6 +61,7 @@ commonConfig = {
       router: path.join(__dirname, 'src/router'),
       public: path.join(__dirname, 'src/public'),
       static: path.join(__dirname, 'src/static'),
+      'u8c': 'u8c-components/dist',
     }
   }
 };

@@ -20,6 +20,23 @@ const devConfig = {
     module: {
         rules: [{
             test: /\.css$/,
+            include: [
+                path.join(__dirname, './node_modules'),
+            ],
+            use: [
+                "style-loader",
+                {
+                    loader: 'css-loader',
+                    options: {
+                        modules: false,
+                        importLoaders: 1,
+                        sourceMap: false
+                    }
+                },
+            ]
+        },{
+            test: /\.css$/,
+            include: path.join(__dirname, './src'),
             use: ["style-loader", "css-loader", "postcss-loader"]
         }]
     },
